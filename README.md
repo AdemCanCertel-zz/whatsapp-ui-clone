@@ -1,2 +1,2 @@
-# whatsapp-ui-clone
-Whatsapp UI clone
+# whatsapp-uiclone
+WhatsApp ui clone with Nuxt.JS

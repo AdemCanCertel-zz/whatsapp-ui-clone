@@ -1,0 +1,117 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5 {    
+    color: white;
+}
+.phone-status-bar {
+    background-color: #007A60;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+}
+.phone-status-bar i {
+    color: white;
+    padding-right: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.title {
+    font-size: 1.3rem;
+}
+.phone-bar-menu {
+    background-color: #007A60;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.phone-bar-menu i {
+    color: #81B1A9;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.phone-bar-menu i {
+    top: 16px;
+    margin: 0 10px;
+    position: relative;
+}
+.menu-list {
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 800;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+}
+.menu-list-list-item {
+    opacity: .8;
+    padding: .8rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all .2s ease-in-out;
+}
+.menu-list-list-item:hover {
+    cursor: pointer;
+    border-bottom: 3px solid white;
+}
+.chat {
+    padding:.5 0rem;
+}
+@media only screen and (max-width: 360px) {
+    .member-list::after{
+        width: 64%;
+    }
+     
+}
+@media only screen and (min-width: 540px) {
+    .member-list::after{
+        width: 78%;
+    }
+     
+}
+@media only screen and (min-width: 1100px) {
+    .member-list::after{
+        width: 92%;
+    }
+     
+}
+.chat-member-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chat-member-list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right:1rem;
+    width: 76%;
+    height: 1px;
+    background: rgba(0,0,0,.2);
+}
+.member-name-title {
+    color: black;
+    font-size: 20px;
+}
+.member-profile {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+.member-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+    margin: 0 1rem;
+}
+.member-chat-time {
+    margin-right: 1rem;
+}
